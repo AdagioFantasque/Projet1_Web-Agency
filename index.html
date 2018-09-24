@@ -1,9 +1,351 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-	</head>
-	<body>
-		Hello World!
-	</body>
 
-	</html>
+	<!-- The Basics -->
+		<meta charset="utf-8" />
+		<title>Web Agency: Accueil</title>
+
+	<!-- Insert CSS stylesheet here vvv -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="mediaqueries.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> <!-- Intégration de FontAwesome Free -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i" rel="stylesheet">
+
+
+
+		<meta name="description" content="WebAgency, réalisation de projets multimédia" />
+
+	<!-- Insert Social Media meta tags here  vvv -->
+	    <meta name="twitter:card" content="summary"/>
+
+		<meta property="og:title" content="WebAgency" />
+	    <meta property="og:type" content="website" />
+	    <meta property="og:url" content="#" />
+	    <meta property="og:image" content="#" />
+	    <meta property="og:description" content="WebAgency: L'Agence de tous vos projets!" />
+	</head>
+
+<body>
+		<!-- Global container for the whole page body -->
+	<div id="full_page">
+
+		<header> <!-- SECTION 0 - THE MENU -->
+			
+			<div id="logo"> <!-- 0.1 - The Logo -->
+				<img src="images/logo.png" alt="Logo de la Web Agency">
+				
+			</div>
+
+			<div id="navigation_bar"> <!-- 0.2 - Navigation Bar -->
+				<nav>
+					<ul>
+						<li><a href="#slider">Accueil</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#projects">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+
+		</header>
+
+		<section id="slider">
+			<div class="slideshow">
+
+				<div id="slide-1">
+					<div id="slide-2">
+
+						<a class="left_button" href="#slide-1"> <!-- 1.1 Bouton Gauche -->
+
+							<i class="fas fa-angle-left"></i>
+						</a>
+
+						<a class="right_button" href="#slide-2"> <!-- 1.3 Bouton Droite -->
+							<i class="fas fa-angle-right"></i>
+						</a>
+
+						<div class="slider_element" id="slider_text">  <!-- 1.2 Image + Texte + Bouton Infos -->
+							<h1><strong>WEB AGENCY</strong>: L'AGENCE DE TOUS VOS PROJETS!</h1>
+							<p>Vous avez un <em>projet web</em>? La Web Agency vous aide à le réaliser!</p>
+							<p class="bouton_plus_dinfos"><a href="#services">PLUS D'INFOS</a></p>
+						</div>
+
+						<ul class="sContent">
+							<li class="slide"><img src="images/slider/bg1.jpg" alt="une petite fille" /></li>
+							<li class="slide"><img src="images/slider/bg2.jpg" alt="un petit garçon" /></li>
+						</ul>
+
+
+					</div>
+				</div>
+
+
+				
+			</div>
+			
+
+		</section>
+
+
+
+
+		<section id="services"> <!-- SECTION 2 - SERVICES -->
+
+			<div class="section_intro"> <!-- 2.1 - En-tête des services -->
+
+				<h2 class="section_title">NOS <em>SERVICES</em></h2> <!-- 2.1.1 - Titre dans l'en-tête et caption -->
+
+				<div class="separate">
+					<div class="right_borderline"></div>
+					<i class="fas fa-circle"></i>
+					<div class="left_borderline"></div>
+				</div>
+
+				<p>Nous vous proposons une gamme d'options et de services adaptée à la taille de votre projet.
+				Que vous soyez petit ou grand, nous sommes à l'écoute de vos besoins et de vos souhaits!</p>
+
+			</div>
+
+			<div id="services_main"> <!-- 2.2 - Corps de section -->
+
+				 <div class="services_illustration"> <!-- 2.2.1 - L'illustration de la section -->
+					<figure>
+						<img src="images/main-feature.png" alt="illustration des services WebAgency"/>
+
+					</figure>
+				</div>
+
+				<div class="services_elements_list"> <!-- 2.2.2 - La Liste des services en question -->
+					
+					<div class="services_element" id="services_ux_design"> <!-- 2.2.2.1 - Element 01 des Services: UX Design -->
+
+						<div class="services_elements_list_icon">						
+							
+							<i class="fas fa-chart-line"></i>
+							<div class="dotdot"></div>
+						</div>
+
+						<h3 class="services_element_title"><em>UX DESIGN</em></h3>
+						<p>
+							Vos besoins d'utilisateurs analysés et adaptés pour une expérience d'utilisation optimale!
+						</p>
+					</div>
+
+					<div class="services_element" id="services_ui_design"> <!-- 2.2.2.2 - Element 02 des Services: UI Design -->
+
+						<div class="services_elements_list_icon">						
+							
+							<i class="fas fa-boxes"></i>
+							<div class="dotdot"></div>
+						</div>
+
+						<div class="services_element_text">
+							<h3 class="services_element_title"><em>UI DESIGN</em></h3>
+							<p>
+								Des interfaces soignées pour un comfort d'utilisation optimal!
+							</p>
+						</div>
+					</div>
+
+					<div class="services_element" id="services_seo"> <!-- 2.2.2.3 - Element 03 des Services: SEO -->
+
+						<div class="services_elements_list_icon">
+							<i class="fas fa-chart-pie"></i>
+							<div class="dotdot"></div>
+						</div>
+
+						<h3 class="services_element_title"><em>SEO</em></h3>
+						<p>
+							Etudiez votre marché, ciblez votre clientèle et améliorez votre projet!
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section> 
+
+		<section id="projects"> <!-- SECTION 3 - PROJECTS -->
+
+			<div class="section_intro"> <!-- 3.1 - En-tête des projets (même design) -->
+
+				<h2 class="section_title">NOS <em>PROJETS</em></h2> <!-- 2.1.1 - Titre dans l'en-tête et caption -->
+
+				<div class="separate">
+					<div class="right_borderline"></div>
+					<i class="fas fa-circle"></i>
+					<div class="left_borderline"></div>
+				</div>
+
+				<p>Retrouvez ci-dessous nos projets phare des années précedentes.</p>
+			</div>
+
+			<div id="projects_main"> <!-- 3.2 - Corps de section -->
+
+					<input class="nav-controls" type="radio" name="projets" id="all-works" checked />
+					<input class="nav-controls" type="radio" name="projets" id="all-corporate" />
+					<input class="nav-controls" type="radio" name="projets" id="all-creative" />
+					<input class="nav-controls" type="radio" name="projets" id="all-portfolio" />
+
+
+				<div class="projects_navigation"> <!-- 3.2.1 - Navigation de la section + les boutons d'affichage des diff catégories / voir ex.html pour le code css -->
+
+					
+
+					<nav>
+						<ul>
+						    <li class="all-works">
+						    	<label  for="all-works">All Works</label>
+						    </li>
+						    <li class="all-corporate">
+						    	<label for="all-corporate">Corporate</label>						    	
+						    </li>
+						    <li class="all-creative">
+						    	<label for="all-creative">Creative</label>						    	
+						    </li>
+						    <li class="all-portfolio">
+						    	<label for="all-portfolio">Portfolio</label>						    	
+						    </li>
+						</ul>
+					</nav>
+
+				</div>
+
+				<div class="projects_elements_list"> <!-- 3.2.2 - Liste des projets -->
+					
+					<div class="element portfolio" id="lunettes"> <!-- 3.2.2.1 - Element 01 des Projets : "Lunettes" -->
+						<div class="project_description">
+							<h3 class="element_title">Lunettes Linette</h3>
+							<p>Un projet franchement bigleux</p>
+						</div>
+						
+					</div>
+
+					<div class="element creative" id="easter"> <!-- 3.2.2.2 - Element 02 des Projets : "Easter" -->
+						<div class="project_description">
+							<h3 class="projects_element_title">Easter Bunnies</h3>
+							<p>Un lapin par jour</p>
+						</div>
+						
+					</div>
+
+					<div class="element creative" id="pompadour"> <!-- 3.2.2.3 - Element 03 des Projets : "Pompadour" -->
+						<div class="project_description">
+							<h3 class="projects_element_title">Pomp'amour Pompadour</h3>
+							<p>Styliste et visagiste vintage</p>
+						</div>
+						
+					</div>
+
+					<div class="element corporate" id="notebook"> <!-- 3.2.2.4 - Element 04 des Projets : "Notebook" -->
+						<div class="project_description">
+							<h3 class="projects_element_title">Open Classrooms</h3>
+							<p>Devenez développeur web junior!</p>
+						</div>
+						
+					</div>
+
+					<div class="element portfolio corporate" id="shopping"> <!-- 3.2.2.5 - Element 05 des Projets : "Shopping" -->
+						<div class="project_description">
+							<h3 class="projects_element_title">Petits Petons</h3>
+							<p>Nouvelle boutique à Paris</p>
+						</div>
+						
+					</div>
+
+					<div class="element creative" id="painting"> <!-- 3.2.2.6 - Element 06 des Projets : "Painting" -->
+						<div class="project_description">
+							<h3 class="projects_element_title">Exposition: Le Var en Vacances</h3>
+							<p>Plus de 135 toiles en exclusivité!</p>
+						</div>
+						
+					</div>
+
+					<div class="element corporate" id="rocket"> <!-- 3.2.2.7 - Element 07 des Projets : "Rocket" -->
+						<div class="project_description">
+							<h3 class="projects_element_title">Comic Book: Astroman</h3>
+							<p>La BD de l'espace enfin en France!</p>
+						</div>
+						
+					</div>
+
+					<div class="element portfolio" id="bureau"> <!-- 3.2.2.8 - Element 08 des Projets : "Bureau" -->
+						<div class="project_description">
+							<h3 class="projects_element_title">Conseils anti-overbooking</h3>
+							<p>Savez vous rester zen au boulot?</p>
+						</div>
+						
+					</div>
+
+					<div class="element corporate" id="burger"> <!-- 3.2.2.9 - Element 09 des Projets : "Burger" -->
+						<div class="project_description">
+							<h3 class="projects_element_title">Burgers Bio: New Eat</h3>
+							<p>Votre burger bio maison en ligne!</p>
+						</div>
+						
+					</div>
+
+				</div>
+
+			</div>
+
+		</section> 
+
+		<section id="contact"> <!-- SECTION 4 - CONTACT -->
+
+			<div class="contact_info"> <!-- 4.1 - Le bloc avec le formulaire de contact -->
+
+				<!-- 4.1.1 - titre du bloc -->
+
+				<div class="carte"> <!-- doit être en position relative -->
+
+ 					<!-- 4.1.1.1 - La Carte-->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246080425!2d2.3476369158634327!3d48.87305530762781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1534842082526"></iframe>
+
+					<div class="blue_bg"></div>
+
+					<div class="contact_bloc">
+						<h2 class="section_title">CONTACT INFO</h2> 
+
+						<form method="post" action="contact.php"> <!-- 4.1.1.2 - Ze Formulaire qui mène nulle part, doit être en position absolute-->
+
+							<p id="adress">WebAgency SAS
+								<br />25 Rue d'Hauteville 75010 Paris
+								<br />Tel : 01 02 03 04 05
+							</p>
+
+							<input type="text" name="form_name" id="form_name" maxlength="35" placeholder="Nom" /> <!-- Formulaire: Nom -->
+							<label for="form_name">name</label>
+
+							<input type="text" name="form_surname" id="form_surname" maxlength="35" placeholder="Prénom" /> <!-- Formulaire: Prénom -->
+							<label for="form_surname">surname</label>
+
+							<input type="text" name="form_email" id="form_email" maxlength="55" placeholder="Email" /> <!-- Formulaire: Email -->
+							<label for="form_email">email</label>
+
+							<input type="text" name="form_subject" id="form_subject" maxlength="55" placeholder="Sujet" /> <!-- Formulaire: Sujet -->
+							<label for="form_subject">subject</label>
+
+							<textarea name="form_message" id="form_message" maxlength="1500" placeholder="Votre message (1500 caractères max.)"></textarea>
+							<label for="form_message">message</label>
+
+							<input type="submit" value="Envoyer" class="Envoyer" />
+						</form>
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+		</section>
+
+
+	</div>
+		<!-- End Global container for the whole page body -->
+	</body> <!-- Au secours -->
+</html>

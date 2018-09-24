@@ -1,0 +1,752 @@
+/* Section I. - CSS Styles */
+
+
+*{
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#full_page{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between; 
+	flex-wrap: nowrap;
+	padding: 0;
+	padding-top: 7em;
+	margin: 0;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/* 0 - Menu */
+
+
+header{
+	position: fixed;
+	width: 100%;
+	height: 7em;
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: #FFF;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding-left: 5em;
+	padding-right: 5em;
+	z-index: 10;
+	top: 0;
+}
+
+#navigation_bar ul{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between; 
+	list-style: none;
+	text-align: justify;
+	max-width: 30%;
+	min-width: 1em;
+}
+
+#navigation_bar li{
+	display: inline;
+	padding: 1em;
+	margin: auto;
+	border-radius: 20px;
+	color: #777777;
+	height: 100%;
+}
+
+#navigation_bar a{
+	color: #777;
+}
+
+#navigation_bar li:hover{
+	border-top: solid #5cadd3 3px;
+}
+
+
+/* 1 - Slider */
+
+#slider{
+	margin-bottom: 5em;
+}
+
+.slideshow{
+	position: relative;
+	height: 600px;
+	overflow: hidden;
+}
+
+.slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.slide img{
+	width: 100%;
+	height: auto;
+}
+
+.slide:nth-child(2){
+	left: 100%;
+}
+
+/* 1.1 + 1.3 - Left/Right Button */
+
+.left_button, .right_button
+{
+	position: absolute;
+	z-index: 1;
+	top: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: auto;
+	color: white;
+	width: 2.5em;
+	height: 5em;
+	background-color: rgba(0,0,0,50%);
+}
+
+.left_button{
+	border-radius: 0 2.5em 2.5em 0;
+}
+
+.right_button{
+	border-radius: 2.5em 0 0 2.5em;
+}
+
+.left_button{
+	left: 0;
+}
+
+.right_button{
+	right: 0;
+}
+
+#slide-2:target .sContent{
+	transform: translateX(-100%);
+}
+
+@keyframes AutoSlide {
+	0%, 15%, 35%, 100% {
+		left: 0;
+	}
+	50%, 75%, 85% {
+		left: -100%;
+	}
+}
+
+.sContent{
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-o-transition: all 2s;
+	transition: all 2s;
+
+	animation-name: AutoSlide;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.slider_element{
+	position: absolute;
+	z-index: 1;
+	top: 200px;
+	left: 15%;
+}
+
+
+h1, .slider_element p
+{
+	color: white;
+}
+
+h1
+{
+	font-weight: bold;
+}
+
+h2
+{
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+i
+{
+	font-size: 3em;
+}
+
+strong
+{
+	color: #5cadd3;
+	font-weight: bold;
+}
+
+.bouton_plus_dinfos
+{
+	width: 10em;
+	padding: 20px;
+	background-color: #5cadd3;
+	border-radius: 5px;
+	box-shadow: 0px 5px 2px #4494bb;
+	text-align: center;
+}
+
+.bouton_plus_dinfos a
+{
+	color: white;
+}
+
+/* 2 - Services */
+
+em{
+	font-style: normal;
+}
+
+/* 2.1 + 3.1 - En tetes des sections */
+
+.section_intro
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.section_title{
+	color: #272727;
+	font-weight: bold;
+	font-size: 36px;
+	margin: 0;
+}
+
+.section_title + p{
+	text-align: justify;
+	color: #777777;
+}
+
+.separate{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	color: #5cadd3;
+	padding: 1em;
+	margin: 1em;
+}
+
+.separate i{
+	font-size: 1em;
+	border: 10px solid white;
+	border-radius: 50px;
+}
+
+.left_borderline, .right_borderline{
+	border: 1px solid rgb(235,235,235);
+	min-width: 15em;
+	max-width: 15em;
+	margin: 1em;
+}
+
+
+/* 2.2 - Corps de section*/
+
+#services_main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding: 0;
+	margin-top: 5em;
+	margin-bottom: 10em;
+}
+
+.services_elements_list{
+	display: flex;
+	padding: auto;
+	flex-direction: column;
+	justify-content: left;
+	align-items: space-around;
+}
+
+.services_elements_list_icon
+{
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+.services_elements_list_icon i
+{
+	padding: 0.25em;
+	margin-right: 10px;
+	border: solid 2px #5cadd3;
+	border-radius: 100px;
+}
+
+.dotdot {
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+    background-color: rgb(92,173,211);
+    position: relative;
+    left: -22px;
+}
+
+.services_element
+{
+	color: #777777;
+	align-items: center;
+}
+
+
+/* 3 - Projets */
+
+#projects_main{
+	display: flex;
+	flex-direction: column;
+	justify-content: auto;
+	align-items: center;
+}
+
+/* 3.1 En tete de section Projets */
+
+/* 3.2 - Corps de section Projets */
+
+
+
+.projects_navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: auto;
+	padding: 0;
+}
+
+.projects_navigation li:hover::after,
+#all-works:checked ~ .projects_navigation .all-works::after,
+#all-creative:checked ~ .projects_navigation .all-creative::after,
+#all-corporate:checked ~ .projects_navigation .all-corporate::after,
+#all-portfolio:checked ~ .projects_navigation .all-portfolio::after{
+	display: block;
+}
+
+
+.projects_navigation li::after{
+	display: none;
+	font-family: "Font Awesome 5 Free";
+	content: "\f0d7";
+	font-weight: 900;
+	font-size: 1.5em;
+	position: absolute;
+	bottom: -19px;
+	left: 45%;
+	color: #468cad;
+
+}
+
+
+
+
+.projects_navigation ul
+{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin-top: 2em;
+	padding: 0;
+	background: #e7e7e7;
+	color: #64686d;
+	border-radius: 10px;
+}
+
+.projects_navigation li:hover,
+#all-works:checked ~ .projects_navigation .all-works,
+#all-creative:checked ~ .projects_navigation .all-creative,
+#all-corporate:checked ~ .projects_navigation .all-corporate,
+#all-portfolio:checked ~ .projects_navigation .all-portfolio{
+	display: block;
+	display: inline-block;
+	color: white;
+	background: #5cadd3;
+	border-radius: 10px;
+	box-shadow: 0px 5px 0px #468cad;
+}
+
+
+
+.projects_navigation li{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.projects_navigation label{
+	display: inline-block;
+	padding: 15px 25px;
+	cursor: pointer;
+}
+
+/* 3.2.1 Navigation des Projets */
+
+.nav-controls
+{
+	display: none;
+}
+
+#all-works:checked ~ .projects_elements_list .element,
+#all-corporate:checked ~ .projects_elements_list .corporate,
+#all-creative:checked ~ .projects_elements_list .creative,
+#all-portfolio:checked ~ .projects_elements_list .portfolio {
+	display: block;
+}
+
+/* 3.2.2 Projets liste */
+
+.element {
+    display: none;
+    width: 250px;
+    height: 200px;
+	margin: 30px;
+	padding-left: 50px;
+	border: solid 1px #e5e5e5e5;
+}
+
+.projects_elements_list{
+	display: flex;
+	max-width: 80%;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	padding: 0;
+}
+
+.element{
+	position: relative;
+	cursor: pointer;
+}
+
+.element:hover .project_description{
+	display: flex;
+
+}
+
+.project_description{
+	display: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	flex-direction: column;
+	color: white;
+	text-align: right;
+	background: rgba(0,0,0,40%);
+}
+
+
+.project_description h3, .project_description p{
+	text-align: right;
+	padding: 5px;
+	margin: 5px;
+	margin-top: 10px;
+}
+
+
+#lunettes{
+	background-image: url(images/portfolio/01.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#easter{
+	background-image: url(images/portfolio/02.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#pompadour{
+	background-image: url(images/portfolio/03.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#notebook{
+	background-image: url(images/portfolio/04.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#shopping{
+	background-image: url(images/portfolio/05.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#painting{
+	background-image: url(images/portfolio/06.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#rocket{
+	background-image: url(images/portfolio/07.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#bureau{
+	background-image: url(images/portfolio/08.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#burger{
+	background-image: url(images/portfolio/09.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+/* 4 - Contact */
+
+#contact iframe
+{
+	position: center;
+	width: 100%;
+	height: 50em;
+	margin: 0;
+	padding: 0;
+}
+
+.carte{
+	position: relative;
+}
+
+.blue_bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 50em;
+	margin: 0;
+	padding: 0;
+	background: rgba(92,173,211,40%);
+}
+
+.contact_bloc{
+	position: absolute;
+	height: 500px;
+	min-width: 20%;
+	max-width: 50%;
+	top: 15%;
+	right: 15%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+    align-content: center;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 25px;
+	background: rgba(255,255,255,65%);
+
+}
+
+#adress{
+	align-self: flex-start;
+}
+
+form
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: auto;
+	align-items: auto;
+	padding: 0;
+	margin: 5px;
+}
+
+.contact_bloc input, .contact_bloc textarea{
+	margin: 8px 0px 5px 0px;
+	min-width: auto;
+	min-height: 35px;
+}
+
+.contact_bloc textarea{
+	height: 150px;
+}
+
+label{
+	display: none;
+}
+
+.Envoyer{
+	align-self: flex-start;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	padding: 10px 15px;
+	background-color: #5cadd3;
+	border-radius: 5px;
+	border-style: none;
+	box-shadow: 0px 5px 2px #4494bb;
+	text-align: center;
+	margin: 50px;
+}
+
+.Envoyer:hover{
+	cursor: pointer;
+}
+
+/* Section II. - Media Queries */
+
+/* 1 - Breakpoint */
+
+@media screen and (max-width: 1024px){
+
+	#full_page{
+		width: auto;
+	}
+
+/*  - menu en dessous du logo (squish) */
+
+header{
+	display: flex;
+	min-height: 150px;
+	flex-direction: column;
+	align-items: auto;
+	padding: 0;
+}
+
+/* - retirer slider, garder paragraphe */
+
+.left_button, .right_button, .sContent{
+	display: none;
+}
+
+.slideshow{
+	background-image: none;
+	background: #b5d9eb;$
+
+}
+
+.slideshow{
+	height: auto;
+	padding: 15px;
+}
+
+.slider_element{
+	position: static;
+	margin-top: 50px;
+}
+
+ /* - réagencer services */
+
+ section{
+ 	align-self: center;
+ 	width: 95%;
+ }
+
+#services_main{
+	flex-direction: column;
+}
+
+.services_illustration{
+	text-align: center;
+}
+
+/* - afficher le hover des projets sans hover (?) */
+
+.projects_elements_list{
+	max-width: 95%;
+}
+
+.element{
+	width: 200px;
+    height: 120px;
+    margin: 10px;
+    padding: 0;
+	}
+
+.project_description{
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 80%;
+	padding: 0;
+	margin: 0;
+	flex-direction: column;
+	color: white;
+	font-size: small;
+	text-align: right;
+	background: rgba(0,0,0,0.4);
+
+}
+
+
+/* - garder bloc contact uniquement */
+
+iframe{
+	display: none;
+}
+
+.blue_bg{
+	height: 550px;
+}
+
+.contact_bloc{
+	display: flex;
+	position: relative;
+	top: 0;
+	left: 10%;
+	width: auto;
+	max-width: none;
+	right: unset;
+	left: unset;
+}
+
+/* - peut être carte après ? */
+
+
+
+}
