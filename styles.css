@@ -115,11 +115,11 @@ header{
 	align-items: center;
 	justify-content: center;
 	margin: 0;
-	padding: auto;
+	padding: 2px;
 	color: white;
 	width: 2.5em;
 	height: 5em;
-	background-color: rgba(0,0,0,50%);
+	background-color: rgba(0,0,0,0.5);
 }
 
 .left_button{
@@ -282,10 +282,10 @@ em{
 
 .services_elements_list{
 	display: flex;
-	padding: auto;
+	padding: 2px;
 	flex-direction: column;
 	justify-content: left;
-	align-items: space-around;
+	align-items: flex-start;
 }
 
 .services_elements_list_icon
