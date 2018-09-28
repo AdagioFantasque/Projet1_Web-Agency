@@ -61,7 +61,7 @@ header{
 	display: inline;
 	padding: 1em;
 	margin: auto;
-	border-radius: 0px;
+	border-radius: 20px;
 	color: #777777;
 	height: 100%;
 }
@@ -115,11 +115,11 @@ header{
 	align-items: center;
 	justify-content: center;
 	margin: 0;
-	padding: 2px;
+	padding: auto;
 	color: white;
 	width: 2.5em;
 	height: 5em;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,50%);
 }
 
 .left_button{
@@ -179,7 +179,6 @@ h1, .slider_element p
 h1
 {
 	font-weight: bold;
-	font-size: 700px;
 }
 
 h2
@@ -282,10 +281,10 @@ em{
 
 .services_elements_list{
 	display: flex;
-	padding: 2px;
+	padding: auto;
 	flex-direction: column;
 	justify-content: left;
-	align-items: flex-start;
+	align-items: space-around;
 }
 
 .services_elements_list_icon
@@ -471,10 +470,24 @@ em{
 
 
 .project_description h3, .project_description p{
-	text-align: right;
+	text-align: left;
 	padding: 5px;
 	margin: 5px;
 	margin-top: 10px;
+}
+
+.oeil{
+	position: absolute;
+	right: 15%;
+	bottom: 75px;
+	width: auto;
+	height: auto;
+	padding: 6px 5px;
+	color: white;
+	font-size: x-small;
+	border-radius: 100px;
+	border: 1px solid #777777;
+	background: rgba(72,150,177,1);
 }
 
 
