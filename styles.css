@@ -61,7 +61,7 @@ header{
 	display: inline;
 	padding: 1em;
 	margin: auto;
-	border-radius: 20px;
+	border-radius: 0px;
 	color: #777777;
 	height: 100%;
 }
@@ -179,6 +179,7 @@ h1, .slider_element p
 h1
 {
 	font-weight: bold;
+	font-size: 36px;
 }
 
 h2
@@ -486,7 +487,7 @@ em{
 	color: white;
 	font-size: x-small;
 	border-radius: 100px;
-	border: 1px solid #777777;
+	border: 3px solid white;
 	background: rgba(72,150,177,1);
 }
 
