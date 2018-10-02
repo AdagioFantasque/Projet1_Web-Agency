@@ -166,8 +166,10 @@ header{
 .slider_element{
 	position: absolute;
 	z-index: 1;
+	max-width: 50%;
 	top: 200px;
 	left: 15%;
+	flex-wrap: wrap;
 }
 
 
@@ -179,7 +181,7 @@ h1, .slider_element p
 h1
 {
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 42px;
 }
 
 h2
