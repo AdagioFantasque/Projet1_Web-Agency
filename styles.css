@@ -684,6 +684,11 @@ label{
 		max-width: 100%;
 	}
 
+
+#projects, #services{
+	margin-top: 20px;
+}
+
 /*  - menu en dessous du logo (squish) */
 
 header{
