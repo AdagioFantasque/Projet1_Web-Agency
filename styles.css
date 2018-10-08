@@ -345,6 +345,10 @@ em{
 
 /* 3 - Projets */
 
+#projects{
+	background: rgb(245,245,245);
+}
+
 #projects_main{
 	display: flex;
 	flex-direction: column;
@@ -696,6 +700,7 @@ label{
 	header{
 		display: flex;
 		min-height: 200px;
+		height: 7em;
 		max-width: 100%;
 		flex-direction: column;
 		align-items: center;
@@ -703,8 +708,12 @@ label{
 		margin: 0;
 	}
 
-	header a{
+	#navigation_bar a{
 		padding: 0;
+	}
+
+	#navigation_bar li{
+		padding: 2em 0.5em;
 	}
 
 	#logo{
@@ -717,15 +726,20 @@ label{
 		display: none;
 	}
 
-	.slideshow{
+	#slider{
+		width: 100%;
 		background-image: none;
 		background: #b5d9eb;
-		margin-top: 50px;
+		margin: 0;
+		margin-top: 8em;
+		height: 20em;
+	}
 
+	h1{
+		font-size: 24px;
 	}
 
 	.slideshow{
-		height: auto;
 		padding: 15px;
 	}
 
@@ -741,8 +755,16 @@ label{
 
 	 section{
 	 	align-self: center;
-	 	width: 95%;
-	 	font-size: larger
+	 	width: 100%;
+	 	padding: 5px;
+	 	font-size: large;
+	 }
+
+	 .left_borderline, .right_borderline{
+	 	min-width: 7em;
+	 	max-width: 50%;
+	 	padding: 0;
+	 	margin: 0;
 	 }
 
 	#services_main{
@@ -751,9 +773,24 @@ label{
 
 	.services_illustration{
 		text-align: center;
+		padding: 0;
+		margin: 0;
+
+	}
+
+	.services_illustration img{
+		max-width: 100%;
 	}
 
 	/* - afficher le hover des projets sans hover (?) */
+
+	#projects{
+		align-items: center;
+	}
+
+	.projects_navigation label{
+		padding: 15px 5px;
+	}
 
 	.projects_elements_list{
 		max-width: 95%;
