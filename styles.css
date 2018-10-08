@@ -127,6 +127,7 @@ header{
 	width: 2.5em;
 	height: 5em;
 	background-color: rgba(0,0,0,0.5);
+	font-size: 12px;
 }
 
 .left_button{
@@ -212,8 +213,9 @@ strong
 
 .bouton_plus_dinfos
 {
-	width: 10em;
-	padding: 20px;
+	font-size: 24px;
+	width: 7em;
+	padding: 15px;
 	background-color: #5cadd3;
 	border-radius: 5px;
 	box-shadow: 0px 5px 2px #4494bb;
@@ -679,16 +681,21 @@ label{
 
 	#full_page{
 		width: auto;
+		max-width: 100%;
 	}
 
 /*  - menu en dessous du logo (squish) */
 
 header{
 	display: flex;
-	min-height: 150px;
+	min-height: 200px;
 	flex-direction: column;
 	align-items: center;
 	padding: 0;
+}
+
+#logo{
+	margin-top: 20px;
 }
 
 /* - retirer slider, garder paragraphe */
@@ -700,6 +707,7 @@ header{
 .slideshow{
 	background-image: none;
 	background: #b5d9eb;
+	margin-top: 50px;
 
 }
 
@@ -709,8 +717,11 @@ header{
 }
 
 .slider_element{
+	max-width: 100%;
 	position: static;
 	margin-top: 50px;
+	flex-direction: row;
+
 }
 
  /* - réagencer services */
