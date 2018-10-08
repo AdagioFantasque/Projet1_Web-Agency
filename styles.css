@@ -760,6 +760,10 @@ label{
 	 	font-size: large;
 	 }
 
+	 #services, #projects{
+	 	padding-top: 12em;
+	 }
+
 	 .left_borderline, .right_borderline{
 	 	min-width: 7em;
 	 	max-width: 50%;
@@ -786,6 +790,13 @@ label{
 
 	#projects{
 		align-items: center;
+		justify-content: center;
+	}
+
+	.projects_navigation ul{
+		max-width: 70%;
+		flex-wrap: wrap;
+		padding: 1em 0 1em 0; 
 	}
 
 	.projects_navigation label{
