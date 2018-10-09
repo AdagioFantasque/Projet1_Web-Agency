@@ -691,20 +691,23 @@ label{
 	}
 
 	#projects, #services{
+		max-width: 100%;
 		margin-bottom: 150px;
-		margin-top: 150px;
-		padding: 15px;
+		padding: 0;
+		padding-top: 12em;
 	}
 
 	/*  - menu en dessous du logo (squish) */
 
 	header{
+		font-size: medium;
 		display: flex;
 		min-height: 200px;
 		height: 7em;
 		max-width: 100%;
 		flex-direction: column;
-		align-items: center;
+		flex-wrap: wrap;
+		justify-content: flex-start;
 		padding: 0;
 		margin: 0;
 	}
@@ -728,7 +731,7 @@ label{
 	}
 
 	#slider{
-		width: 100%;
+		max-width: 100%;
 		background-image: none;
 		background: #b5d9eb;
 		margin: 0;
@@ -761,13 +764,13 @@ label{
 	 	font-size: large;
 	 }
 
-	 #services, #projects{
-	 	padding-top: 12em;
+	 .separate{
+	 	max-width: 320px;
 	 }
 
 	 .left_borderline, .right_borderline{
-	 	min-width: 7em;
-	 	max-width: 50%;
+	 	min-width: 3em;
+	 	max-width: 35%;
 	 	padding: 0;
 	 	margin: 0;
 	 }
@@ -797,11 +800,12 @@ label{
 	.projects_navigation ul{
 		max-width: 100%;
 		flex-wrap: wrap;
-		padding: 1em 0 1em 0; 
+		padding: 0; 
 	}
 
 	.projects_navigation label{
-		padding: 15px 5px;
+		font-size: medium;
+		padding: 5px 5px;
 	}
 
 	.projects_elements_list{
