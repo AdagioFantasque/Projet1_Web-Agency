@@ -85,6 +85,7 @@ header{
 /* 1 - Slider */
 
 #slider{
+	max-width: 100%;
 	padding-top: 7em;
 	margin-bottom: 5em;
 }
@@ -732,7 +733,7 @@ label{
 	}
 
 	#slider{
-		max-width: 320px;
+		max-width: 95%;
 		background-image: none;
 		background: #b5d9eb;
 		margin: 0;
