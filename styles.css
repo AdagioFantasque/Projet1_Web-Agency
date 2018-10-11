@@ -6,10 +6,10 @@
 	
 }
 
-/* body{
+body{
 	margin: 0;
 	padding: 0;
-} */
+}
 
 #full_page{
 	display: flex;
@@ -688,6 +688,7 @@ label{
 		width: auto;
 		max-width: 100%;
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	#projects, #services{
