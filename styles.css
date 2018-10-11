@@ -6,10 +6,10 @@
 	
 }
 
-body{
+/* body{
 	margin: 0;
 	padding: 0;
-}
+} */
 
 #full_page{
 	display: flex;
@@ -731,7 +731,7 @@ label{
 	}
 
 	#slider{
-		max-width: 100%;
+		max-width: 320px;
 		background-image: none;
 		background: #b5d9eb;
 		margin: 0;
@@ -759,7 +759,7 @@ label{
 
 	 section{
 	 	align-self: center;
-	 	width: 100%;
+	 	max-width: 100%;
 	 	padding: 5px;
 	 	font-size: large;
 	 }
